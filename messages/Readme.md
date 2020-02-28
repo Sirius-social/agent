@@ -44,7 +44,11 @@ Example:
 ```
 
 when message with decorator  "~please_ack" arrived , send message  to endpoint in "serviceEndpoint" with "PENDING" status:
+
+
 **Protocol**: did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/notification/1.0/ack
+
+
 **message**
 
 - status - PENDING (delivered), OK (readed) 
