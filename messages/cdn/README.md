@@ -98,4 +98,4 @@ Example:
 ## Anvanced questions
 
 ### Receive receipts
-df
+To mark message as received or achnowleged, refer to [sirius ack concept](https://github.com/Sirius-social/agent/blob/master/messages/PleaseAckDecorator.md)
