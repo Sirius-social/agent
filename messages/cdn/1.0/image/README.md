@@ -1,0 +1,1 @@
+Navigate to [Sirius media and file exchanging Protocol 1.0](https://github.com/Sirius-social/agent/blob/master/messages/cdn/README.md) 
