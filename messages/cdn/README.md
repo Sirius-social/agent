@@ -8,7 +8,7 @@
 
 ## Summary
 
-The media and file exchanging protocol describes a stateless, easy to support user content exchange  protocol. It has a single multiple message types used to transmit files and media.
+The media and file exchanging protocol describes a stateless, easy to support user content exchange  protocol. It has multiple message types used to transmit files and media.
 
 ## Motivation
 
@@ -43,13 +43,18 @@ There are many useful features of user messaging systems that we will not be add
 
 Example:
 
-```
+```json
 {
-    "@id": "123456780",
-    "@type": "did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/basicmessage/1.0/message",
-    "~l10n": { "locale": "en" },
-    "sent_time": "2019-01-15 18:42:01Z",
-    "content": "Your hovercraft is full of eels."
+  "@type": "https://github.com/Sirius-social/agent/tree/master/messages/cdn/1.0/image",
+  "@id": "iM95e-b6173702-8b56-461c-ac56-84a8fee08aac",
+  "url": "https://socialsirius.com/content/public/xxx.jpg",
+  "preview_url": "null",
+  "sent_time": "2020-03-05 14:56:04+0300",
+  "decryption_key": "HRjNKAl6gbemiUuHeaEjEA==\n",
+  "~l10n": {
+    "locale": "en"
+  },
+  "content_type": "image"
 }
 ```
 
@@ -81,20 +86,6 @@ To build message :
 - content_type -  type of attachment(one of image, video, audio ,doc)
 - decryption_key - your Decryption Key in BASE64 format
 
-Example:
-
-```json
-{
-    "@id": "123456780",
-    "@type": "https://github.com/Sirius-social/agent/tree/master/messages/cdn/1.0/image",
-    "~l10n": { "locale": "en" },
-    "sent_time": "2019-01-15 18:42:01Z",
-    "url": "https://....",
-    "preview_url": "https://....",
-    "content_type": "image",
-    "decryption_key": "<BASE64>Decryption Key",
-}
-```
 ## Anvanced questions
 
 ### Receive receipts
