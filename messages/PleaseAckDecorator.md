@@ -31,7 +31,7 @@ Example for Authcrypt mode:
     "ciphertext": "K7KxkeYGtQpbi-gNuLObS8w724mIDP7IyGV_aN5AscnGumFd-SvBhW2WRIcOyHQmYa-wJX0MSGOJgc8FYw5UOQgtPAIMbSwVgq-8rF2hIniZMgdQBKxT_jGZS06kSHDy9UEYcDOswtoLgLp8YPU7HmScKHSpwYY3vPZQzgSS_n7Oa3o_jYiRKZF0Gemamue0e2iJ9xQIOPodsxLXxkPrvvdEIM0fJFrpbeuiKpMk",
     "tag": "kAuPl8mwb0FFVyip1omEhQ==",
     "~please_ack": { 
-		"message_id": "id",
+	"message_id": "id",
         "serviceEndpoint" : "https://..."
     }
 }
