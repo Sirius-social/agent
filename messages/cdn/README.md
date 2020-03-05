@@ -50,7 +50,7 @@ Example:
   "url": "https://socialsirius.com/content/public/xxx.jpg",
   "preview_url": "null",
   "sent_time": "2020-03-05 14:56:04+0300",
-  "decryption_key": "HRjNKAl6gbemiUuHeaEjEA==\n",
+  "decryption_key": "HRjNKAl6gbemiUuHeaEjEA==",
   "~l10n": {
     "locale": "en"
   },
