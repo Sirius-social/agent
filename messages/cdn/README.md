@@ -45,7 +45,7 @@ Example:
 
 ```json
 {
-  "@type": "did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/basicmessage/1.0/image",
+  "@type": "https://github.com/Sirius-social/agent/tree/master/messages/cdn/1.0/image",
   "@id": "iM95e-b6173702-8b56-461c-ac56-84a8fee08aac",
   "url": "https://socialsirius.com/content/public/xxx.jpg",
   "preview_url": "null",
