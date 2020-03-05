@@ -1,10 +1,10 @@
 # Sirius media and file exchanging Protocol 1.0
 
-- Authors: [Igor Fedorov](https://github.com/igorexax3mal)
+- Authors: [Igor Fedorov](https://github.com/igorexax3mal), [Pavel Minenkov](https://github.com/Purik)
 - Since: 2020-02-01 
 - Inherited from: [Aries 0095](https://github.com/hyperledger/aries-rfcs/tree/master/features/0095-basic-message)
 - Start Date: 2019-01-16
-- Tags: [feature](/tags.md#feature), [protocol](/tags.md#protocol), [test-anomaly](/tags.md#test-anomaly)
+
 
 ## Summary
 
@@ -33,7 +33,7 @@ There are many useful features of user messaging systems that we will not be add
 
 ## Reference
 
-**Protocol**: did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/basicmessage/1.0/
+**Protocol**: `https://github.com/Sirius-social/agent/tree/master/messages/cdn/1.0/`
 
 **message**
 
@@ -43,7 +43,7 @@ There are many useful features of user messaging systems that we will not be add
 
 Example:
 
-```json
+```
 {
     "@id": "123456780",
     "@type": "did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/basicmessage/1.0/message",
@@ -54,23 +54,25 @@ Example:
 ```
 
 
-## Attachments
+## Message types
 
-**Protocol**: did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/basicmessage/1.0/image  - Image (.jpg, .png etc.)
+**type**: `https://github.com/Sirius-social/agent/tree/master/messages/cdn/1.0/image`  - Image (`.jpg`, `.png` etc.)
 
-**Protocol**: did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/basicmessage/1.0/video  - Video (.mp4 etc.)
+**type**: `https://github.com/Sirius-social/agent/tree/master/messages/cdn/1.0/video`  - Video (`.mp4` etc.)
 
-**Protocol**: did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/basicmessage/1.0/audio  - Audio (.wav, .mp3 etc.)
+**type**: `https://github.com/Sirius-social/agent/tree/master/messages/cdn/1.0/audio`  - Audio (`.wav`, `.mp3` etc.)
 
-**Protocol**: did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/basicmessage/1.0/doc    - Other type 
+**type**: `https://github.com/Sirius-social/agent/tree/master/messages/cdn/1.0/doc`    - Other type 
 
 
-## Tutorial For Attachnmetns
-To add attachments in message :
+## Tutorial For message constructing
+
+To build message :
 
 1. Choose  desired type of attachment
 2. Encrypt file 
-3. add type of attachment and DecryptionKey to message
+3. Upload file to preferred CDN provider with public access to file
+3. Add type of attachment and DecryptionKey to message
 
 **message**
 
@@ -84,7 +86,7 @@ Example:
 ```json
 {
     "@id": "123456780",
-    "@type": "did:sov:BzCbsNYhMrjHiqZDTUASHg;spec/basicmessage/1.0/image",
+    "@type": "https://github.com/Sirius-social/agent/tree/master/messages/cdn/1.0/image",
     "~l10n": { "locale": "en" },
     "sent_time": "2019-01-15 18:42:01Z",
     "url": "https://....",
@@ -94,8 +96,6 @@ Example:
 }
 ```
 ## Anvanced questions
-- Receive receipts
 
-## Unresolved questions
-
-- Receive receipts (NOT read receipts) may be implicitly supported by an ack decorator with pre-processing support.
+### Receive receipts
+df
