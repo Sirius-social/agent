@@ -12,7 +12,7 @@ The media and file exchanging protocol describes a stateless, easy to support us
 
 ## Motivation
 
-It is a useful feature to be able to transmit encrypted content in [P2P](https://github.com/hyperledger/aries-rfcs/tree/master/features/0160-connection-protocol "P2P") context. Any media content is encrypted by key, decrypted key is presented in message, so sender can control participiants who can get access to semantic of the files located on CDN.
+It is a useful feature to be able to transmit encrypted content in [P2P](https://github.com/hyperledger/aries-rfcs/tree/master/features/0160-connection-protocol) context. Any media content is encrypted by key, decrypted key is presented in message, so sender can control participiants who can get access to semantic of the files located on CDN.
 
 ## Tutorial
 
