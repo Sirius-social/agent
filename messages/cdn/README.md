@@ -8,7 +8,7 @@
 
 ## Summary
 
-The media and file exchanging protocol describes a stateless, easy to support user content exchange  protocol. It has a single multiple message types used to transmit files and media.
+The media and file exchanging protocol describes a stateless, easy to support user content exchange  protocol. It has multiple message types used to transmit files and media.
 
 ## Motivation
 
